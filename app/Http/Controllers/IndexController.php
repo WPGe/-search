@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Vanya
+ * Date: 22.12.2019
+ * Time: 0:47
+ */
+
+namespace App\Http\Controllers;
+
+
+class IndexController
+{
+
+}
