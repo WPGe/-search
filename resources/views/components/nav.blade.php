@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Vanya
- * Date: 22.12.2019
- * Time: 1:04
- */
+<div class="row">
+    <div class="col-md-5">Left menu</div>
+    <div class="col-md-2">Logo</div>
+    <div class="col-md-5">Right menu</div>
+</div>

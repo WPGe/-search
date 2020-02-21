@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Vanya
- * Date: 22.12.2019
- * Time: 0:55
- */
+@extends('layouts.default');
+
+@section('content')
+    <div class="test">
+        @foreach($selection as $elem)
+            <p>{{$elem}}</p>
+        @endforeach
+    </div>
+
+@stop

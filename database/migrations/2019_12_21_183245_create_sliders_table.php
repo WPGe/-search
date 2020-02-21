@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoryableTable extends Migration
+class CreateSlidersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateCategoryableTable extends Migration
      */
     public function up()
     {
-        Schema::create('categoryables', function (Blueprint $table) {
-            $table->integer('category_id');
-            $table->integer('categoryable_id');
-            $table->string('categoryable_type');
+        Schema::create('slides', function (Blueprint $table) {
+            $table->increments('id');
+            $table->boolean('active');
+            $table->integer('weight');
+            $table->string('image');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +29,6 @@ class CreateCategoryableTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categoryables');
+        Schema::dropIfExists('slides');
     }
 }
