@@ -165,6 +165,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         //dev
+        
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
@@ -235,8 +236,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-
     ],
 
 ];
